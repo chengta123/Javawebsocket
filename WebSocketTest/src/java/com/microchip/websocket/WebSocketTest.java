@@ -24,7 +24,7 @@ public class WebSocketTest {
     public void onMessage(String message, Session session) throws IOException,
             InterruptedException {
         System.out.println("User input: " + message);
-        session.getBasicRemote().sendText("Hello world Mr. " + message);
+        session.getBasicRemote().sendText("Hello Mr. " + message);
         // Sending message to client each 1 second
 //        for (int i = 0; i <= 25; i++) {
 //            session.getBasicRemote().sendText(i + " Message from server");
